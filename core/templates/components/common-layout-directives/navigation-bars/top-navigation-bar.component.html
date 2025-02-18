@@ -195,17 +195,17 @@
                 </span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="dropdown-item nav-link oppia-navbar-tab-content about-link oppia-impact-report-btn e2e-test-navbar-impact-report-button"
-                 [href]="IMPACT_REPORT_LINK"
-                 target="_blank"
-                 (blur)="aboutDropdown.close()"
-                 rel="noopener">
-                <span class="link">
-                  {{'I18N_TOPNAV_IMPACT_REPORT' | translate}}
-                </span>
-                <i class="fas fa-external-link-alt launch-icon"></i>
-              </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle oppia-impact-report-btn"
+                   href="#" id="impactReportDropdown"
+                   role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    {{'I18N_TOPNAV_IMPACT_REPORT' | translate}}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="impactReportDropdown">
+                  <a class="dropdown-item" href="https://drive.google.com/file/d/1lPu2g3HXpMDrKJu-Nssh67ynxpWxxfw9/view?usp=drive_link" target="_blank">Impact Report 2023</a>
+                  <a class="dropdown-item" href="https://drive.google.com/file/d/1zowwvv1bXdvZ9295c7QqK4n4P_iKMEcc/view?usp=drive_link" target="_blank">Impact Report 2022</a>
+                </div>
             </li>
           </ul>
         </li>
